@@ -1,0 +1,29 @@
+{
+  "name": "pharma-ci",
+  "owner": {
+    "name": "edoc33",
+    "url": "https://github.com/edoc33"
+  },
+  "metadata": {
+    "description": "Pharma competitive-intelligence monitoring skills: watchlists, Alert-me-when rules, review routing and weekly briefs built on public page changes.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pharma-ci",
+      "source": "./plugins/pharma-ci",
+      "description": "Nine skills for pharma and biotech intelligence teams: build a decision-linked watchlist, write importance rules, set up registry, regulatory, launch-signal, market-access and congress monitors, route alerts to an owned review queue, and publish a weekly brief.",
+      "version": "0.1.0",
+      "category": "research",
+      "keywords": [
+        "pharma",
+        "competitive-intelligence",
+        "regulatory-intelligence",
+        "clinical-trials",
+        "monitoring",
+        "market-access",
+        "visualping"
+      ]
+    }
+  ]
+}
