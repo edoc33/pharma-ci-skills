@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "example_id": "trial-sites",
+  "title": "Clinical trial locations: saved summary reports 171 to 169",
+  "primary_workshop_input": false,
+  "source": {
+    "name": "ClinicalTrials.gov study NCT07311850",
+    "url": "https://clinicaltrials.gov/study/NCT07311850"
+  },
+  "observed_at": "2026-09-04T18:40:56.000Z",
+  "previous_capture_at": null,
+  "source_published_at": null,
+  "source_dates": [],
+  "saved_alert": {
+    "verification": "reproduced_from_saved_event",
+    "important": false,
+    "ai_summary": "The Contacts and Locations section was updated: two Czech sites were removed, a UK Stockton site entry was edited, the Forum Health Cary site label was changed, and the total site count shown was updated from 171 to 169; page update timestamps moved from August entries to early September.",
+    "watch_rule": "Alert me when the trial status, primary completion date, enrollment, arms, or primary outcomes change."
+  },
+  "verified_observation": "The bundled comparison crop visibly highlights: This study has 169 locations.",
+  "assets": {
+    "comparison": "../assets/trial-sites-comparison.jpg",
+    "before": null
+  },
+  "proposed_review": {
+    "status": "proposed_not_executed",
+    "owner": "[Choose trial or country-site intelligence reviewer]",
+    "backup": "[Choose backup reviewer]",
+    "next_action": "[Proposed: verify the record history and affected locations, then decide whether site changes belong in the watch rule]",
+    "decision": "[Reviewer records the decision after checking the source]"
+  },
+  "limitations": [
+    "The earlier count of 171 and the individual site edits are claims in the saved AI Summary. The bundled crop independently shows only the highlighted total of 169.",
+    "A separate before capture and its timestamp were unavailable in the selected evidence.",
+    "The saved rule covers status, primary completion date, enrollment, arms and primary outcomes. IMPORTANT=false reflects that chosen scope; a site-change mandate may require a different rule.",
+    "The flag does not establish delivery failure, human review or a clinical conclusion.",
+    "The inherited crop is pixelated but readable; consult the study record before interpretation."
+  ]
+}

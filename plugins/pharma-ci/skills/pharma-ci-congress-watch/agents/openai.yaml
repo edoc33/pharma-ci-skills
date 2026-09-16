@@ -1,0 +1,4 @@
+interface:
+  display_name: "Congress watch"
+  short_description: "Watch abstract portals on a seasonal cadence and build a coverage queue"
+  default_prompt: "Use $pharma-ci-congress-watch to plan monitoring for this congress."

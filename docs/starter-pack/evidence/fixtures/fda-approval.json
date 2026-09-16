@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "example_id": "fda-approval",
+  "title": "FDA approval list: Isembyld",
+  "primary_workshop_input": true,
+  "source": {
+    "name": "FDA novel drug approvals",
+    "url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026"
+  },
+  "observed_at": "2026-09-11T22:30:54.000Z",
+  "previous_capture_at": "2026-09-10T18:53:13.000Z",
+  "source_published_at": null,
+  "source_dates": [
+    {
+      "kind": "approval_date",
+      "value": "2026-09-11",
+      "scope": "Isembyld row in the saved FDA list"
+    }
+  ],
+  "saved_alert": {
+    "verification": "reproduced_from_saved_event",
+    "important": true,
+    "ai_summary": "A new approval was added for Isembyld (active ingredient apitegromab-mstn), approved 9/11/2026, to treat spinal muscular atrophy in adults and pediatric patients 2 years of age and older who are currently receiving an SMN2-targeted treatment.",
+    "watch_rule": "Alert me when a new approval is added; include the ingredient, approval date, and indication."
+  },
+  "verified_observation": "The comparison highlights a new Isembyld row with ingredient apitegromab-mstn and approval date 9/11/2026. The earlier capture starts with Etcamah in this excerpt.",
+  "assets": {
+    "comparison": "../assets/fda-isembyld-comparison.jpg",
+    "before": "../assets/fda-isembyld-before.jpg"
+  },
+  "proposed_review": {
+    "status": "proposed_not_executed",
+    "owner": "[Choose asset or therapy-area reviewer]",
+    "backup": "[Choose backup reviewer]",
+    "next_action": "[Proposed: verify the FDA source, preserve the indication scope, and assess relevance to the competitor watchlist]",
+    "decision": "[Reviewer records the decision after checking the source]"
+  },
+  "limitations": [
+    "The approval date, recorded event time and source publication time are distinct; source publication time is unknown.",
+    "The saved row and AI Summary do not establish launch availability, price or positioning.",
+    "This fixture records an alert and proposed review steps; it does not establish reviewer action or a successful Microsoft 365 flow."
+  ]
+}

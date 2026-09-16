@@ -1,0 +1,11 @@
+{
+  "fixture_type": "Fictional practice input",
+  "source_url": "https://example.invalid/meeting-notice",
+  "before": "Start time: 10:00 ET",
+  "after": "Start time: 09:30 ET",
+  "capture_dates": null,
+  "source_event_date": null,
+  "team_rule": "Flag changed meeting start times.",
+  "owner": "Example regulatory reviewer",
+  "note": "Synthetic strings for testing the prompt. No actual website, company, historical capture, or live workflow event is represented."
+}

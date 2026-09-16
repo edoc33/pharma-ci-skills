@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.1",
+  "source_evidence": {
+    "status": "bundled_and_verified",
+    "primary_fixture": "evidence/fixtures/fda-approval.json",
+    "manifest": "evidence/manifest.json",
+    "note": "Five actual saved public-page examples. See each fixture for available earlier captures and AI-reported claims."
+  },
+  "workflow_execution": {
+    "status": "not_verified",
+    "run_id": null,
+    "run_at": null,
+    "input_message_id": null,
+    "output_file": null,
+    "verified_destination": null,
+    "recording_file": null,
+    "verified_by": null,
+    "note": "Populate only after an authorized, observed workflow run. A saved source comparison does not establish execution."
+  }
+}

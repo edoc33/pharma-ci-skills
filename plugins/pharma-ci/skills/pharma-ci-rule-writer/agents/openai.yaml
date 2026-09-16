@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rule writer"
+  short_description: "Write the Alert-me-when rule before you add the page"
+  default_prompt: "Use $pharma-ci-rule-writer to turn my watch question into an importance rule."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Launch signals"
+  short_description: "Watch the pages that precede a competitor launch"
+  default_prompt: "Use $pharma-ci-launch-signals to monitor a competitor's pipeline, hiring, leadership and filings."

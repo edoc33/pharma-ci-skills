@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "example_id": "pfizer-campaign",
+  "title": "Pfizer homepage: vaccination campaign copy",
+  "primary_workshop_input": false,
+  "source": {
+    "name": "Pfizer homepage",
+    "url": "https://www.pfizer.com/"
+  },
+  "observed_at": "2026-09-09T12:10:54.000Z",
+  "previous_capture_at": null,
+  "source_published_at": null,
+  "source_dates": [],
+  "saved_alert": {
+    "verification": "not_verified_for_this_package",
+    "important": null,
+    "ai_summary": null,
+    "watch_rule": null
+  },
+  "verified_observation": "The saved comparison highlights the hero headline Living Through It All and vaccination-focused body copy.",
+  "assets": {
+    "comparison": "../assets/pfizer-campaign-comparison.jpg",
+    "before": null
+  },
+  "proposed_review": {
+    "status": "proposed_not_executed",
+    "owner": "[Choose brand or commercial CI reviewer]",
+    "backup": "[Choose backup reviewer]",
+    "next_action": "[Proposed: read the campaign page and assess whether the message changes the competitor briefing]",
+    "decision": "[Reviewer records the decision after checking the source]"
+  },
+  "limitations": [
+    "A separate before capture was unavailable in the returned history. Exact prior hero copy and first publication time are unverified.",
+    "The saved IMPORTANT flag, AI Summary and watch rule were not verified for this package and are omitted as null.",
+    "The highlighted messaging does not establish product availability, clinical superiority or campaign performance.",
+    "The named organization is the public source publisher; no customer relationship or completed commercial action is asserted."
+  ]
+}

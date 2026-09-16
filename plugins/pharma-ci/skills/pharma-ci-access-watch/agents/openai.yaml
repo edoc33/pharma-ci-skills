@@ -1,0 +1,4 @@
+interface:
+  display_name: "Access watch"
+  short_description: "Watch payer bulletins, HTA decisions and guidelines by asset or geography"
+  default_prompt: "Use $pharma-ci-access-watch to monitor coverage and HTA pages for my asset."

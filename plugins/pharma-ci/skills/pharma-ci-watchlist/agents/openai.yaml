@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pharma CI watchlist"
+  short_description: "Plan the pages to watch around the decisions you own"
+  default_prompt: "Use $pharma-ci-watchlist to build a decision-linked watchlist for my therapeutic area."

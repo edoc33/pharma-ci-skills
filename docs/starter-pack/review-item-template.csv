@@ -1,0 +1,2 @@
+item_id,source_url,source_identifier,source_event_date,source_publication_date,before_capture_date,after_capture_date,retrieved_at,evidence_reference,changed_field,old_value,new_value,team_rule,important,needs_review,owner,backup_owner,destination,due_at,review_status,reviewed_by,reviewed_at,action,observed_at,ai_summary,saved_important,classification_provenance,evidence_basis,delivery_policy,maintenance_owner
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Registry watch"
+  short_description: "Follow competitor trial records and read amendments carefully"
+  default_prompt: "Use $pharma-ci-registry-watch to set up monitors on these competitor trial records."

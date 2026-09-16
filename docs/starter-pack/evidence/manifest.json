@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "prepared_on": "2026-09-16",
+  "primary_fixture": "fixtures/fda-approval.json",
+  "fixture_schema": "fixture.schema.json",
+  "fixtures": [
+    {
+      "file": "fixtures/fda-approval.json",
+      "sha256": "dbe68aa5d8401a32677d1f51a74e08fd81e978918ba14e9d5d212bae5f299021"
+    },
+    {
+      "file": "fixtures/nice-guidance.json",
+      "sha256": "9d3d6e240674ed115e50c19cb48c7db5a673471c117cb83fdddcb3b4cea9b96f"
+    },
+    {
+      "file": "fixtures/trial-sites.json",
+      "sha256": "705ce0ae241bb371ff0fba186be3e389d7680b9749453d64fbb0ebafd0fa6009"
+    },
+    {
+      "file": "fixtures/pfizer-campaign.json",
+      "sha256": "1fa7ff563ba561ea0a9612416a13a30ee701383158adbf9b2a3fdbb6e941f533"
+    },
+    {
+      "file": "fixtures/cvs-announcement.json",
+      "sha256": "32c43617401f57d38ac70af479071ca0bf23fddb27c068cbb472aa94509c7236"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/fda-isembyld-comparison.jpg",
+      "example_id": "fda-approval",
+      "role": "comparison",
+      "sha256": "00d93d5005d83e0154f621bcfc57ea8abc078fdce219f448281eef87bccc16d3",
+      "bytes": 121656,
+      "source_url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
+      "recorded_event_at": "2026-09-11T22:30:54.000Z",
+      "earlier_capture_at": null,
+      "crop_created_at": "2026-09-12T23:15:39.555Z",
+      "original_capture_asset_sha256": "c8aea51e319c2dcef2c70fe8564c4d3aacf32fc429ea9eef9a4c3a381e81cc71",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        1920,
+        936
+      ],
+      "media_type": "image/jpeg"
+    },
+    {
+      "file": "assets/fda-isembyld-before.jpg",
+      "example_id": "fda-approval",
+      "role": "before",
+      "sha256": "038de196c6f8abe196d3c38841b4ac73b318e7fd6d9c1bd20d0becb5d38e8529",
+      "bytes": 95437,
+      "source_url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
+      "recorded_event_at": "2026-09-11T22:30:54.000Z",
+      "earlier_capture_at": "2026-09-10T18:53:13.000Z",
+      "crop_created_at": "2026-09-12T23:17:32.176Z",
+      "original_capture_asset_sha256": "3a7581c1c54837987da0c1d05c22292bc14efbdfde3b68468e5eedfd29f27a75",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        1920,
+        936
+      ],
+      "media_type": "image/jpeg"
+    },
+    {
+      "file": "assets/nice-guidance-comparison.jpg",
+      "example_id": "nice-guidance",
+      "role": "comparison",
+      "sha256": "6777a1b89f853f4e7177e91e1058c88074a3338f2946a041744c9f9e223aba09",
+      "bytes": 43977,
+      "source_url": "https://www.nice.org.uk/guidance/published",
+      "recorded_event_at": "2026-09-09T17:55:11.000Z",
+      "earlier_capture_at": null,
+      "crop_created_at": "2026-09-12T23:10:48.895Z",
+      "original_capture_asset_sha256": "52129c54b8b6dfba0846aebbed252328f5ceea49bd7582eb79487ba1a7d8372c",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        985,
+        332
+      ],
+      "media_type": "image/jpeg"
+    },
+    {
+      "file": "assets/trial-sites-comparison.jpg",
+      "example_id": "trial-sites",
+      "role": "comparison",
+      "sha256": "021798ce980909aa399ee912c288216215e8830e8836153c11dc1f80d797d0ad",
+      "bytes": 17580,
+      "source_url": "https://clinicaltrials.gov/study/NCT07311850",
+      "recorded_event_at": "2026-09-04T18:40:56.000Z",
+      "earlier_capture_at": null,
+      "crop_created_at": null,
+      "original_capture_asset_sha256": "dfeee50599bc112a47fbc5f6de9dc1f5141efad65bffbe79fc39472b5170db28",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        900,
+        438
+      ],
+      "media_type": "image/jpeg"
+    },
+    {
+      "file": "assets/pfizer-campaign-comparison.jpg",
+      "example_id": "pfizer-campaign",
+      "role": "comparison",
+      "sha256": "7c2f9e93ef8ac9a45189c77eece2abb1571ec4c13eae96918f74fed61dd241da",
+      "bytes": 63006,
+      "source_url": "https://www.pfizer.com/",
+      "recorded_event_at": "2026-09-09T12:10:54.000Z",
+      "earlier_capture_at": null,
+      "crop_created_at": null,
+      "original_capture_asset_sha256": "2dad7c16625786c64b0be3cb6522c9610695ae33d7d59603ed77a98a2bda6d15",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        996,
+        720
+      ],
+      "media_type": "image/jpeg"
+    },
+    {
+      "file": "assets/cvs-announcement-comparison.jpg",
+      "example_id": "cvs-announcement",
+      "role": "comparison",
+      "sha256": "cc6be8d9a8d0a4d966ee5fb2746b116e7b922ae9698b2eda9ededf7d8df36e79",
+      "bytes": 55659,
+      "source_url": "https://www.cvshealth.com/services",
+      "recorded_event_at": "2026-09-04T17:57:25.000Z",
+      "earlier_capture_at": null,
+      "crop_created_at": null,
+      "original_capture_asset_sha256": "232556af85bd60ee3f2bae47357677211ce3ff81651b72144be7ec3ef7afa70d",
+      "preparation": "Existing public-page crop copied byte-for-byte; original change highlighting preserved.",
+      "dimensions_px": [
+        996,
+        720
+      ],
+      "media_type": "image/jpeg"
+    }
+  ]
+}

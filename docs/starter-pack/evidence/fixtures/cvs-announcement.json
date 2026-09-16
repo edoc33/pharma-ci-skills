@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "example_id": "cvs-announcement",
+  "title": "CVS services page: vaccine availability announcement",
+  "primary_workshop_input": false,
+  "source": {
+    "name": "CVS Health services",
+    "url": "https://www.cvshealth.com/services"
+  },
+  "observed_at": "2026-09-04T17:57:25.000Z",
+  "previous_capture_at": null,
+  "source_published_at": null,
+  "source_dates": [
+    {
+      "kind": "article_date",
+      "value": "2026-09-03",
+      "scope": "Featured updated COVID-19 vaccine announcement in the saved page"
+    }
+  ],
+  "saved_alert": {
+    "verification": "not_verified_for_this_package",
+    "important": null,
+    "ai_summary": null,
+    "watch_rule": null
+  },
+  "verified_observation": "The saved comparison highlights a featured announcement of updated COVID-19 vaccines at CVS Pharmacy and MinuteClinic across the U.S., dated September 03, 2026.",
+  "assets": {
+    "comparison": "../assets/cvs-announcement-comparison.jpg",
+    "before": null
+  },
+  "proposed_review": {
+    "status": "proposed_not_executed",
+    "owner": "[Choose commercial or market-access reviewer]",
+    "backup": "[Choose backup reviewer]",
+    "next_action": "[Proposed: read the linked announcement and confirm product, eligibility, location and offer details relevant to the briefing]",
+    "decision": "[Reviewer records the decision after checking the source]"
+  },
+  "limitations": [
+    "A separate before capture was unavailable in the returned history, so the previous featured item is unverified.",
+    "The article date is distinct from the recorded event time; the precise publication time is unknown.",
+    "The saved IMPORTANT flag, AI Summary and watch rule were not verified for this package and are omitted as null.",
+    "An availability announcement does not independently verify current local stock, eligibility or fulfillment capacity.",
+    "The crop includes neighboring public-page content. The named organization is the public source publisher; no customer relationship or completed business action is asserted."
+  ]
+}

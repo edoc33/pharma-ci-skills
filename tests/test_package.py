@@ -1,5 +1,6 @@
 import json
 import re
+import subprocess
 import unittest
 from pathlib import Path
 from urllib.parse import unquote
@@ -12,6 +13,15 @@ BANNED = ("—",)  # em dash
 
 
 class PackageTests(unittest.TestCase):
+    def test_plugin_sources_are_not_hidden_by_gitignore(self):
+        if not (ROOT / ".git").exists():
+            self.skipTest("Git metadata is not included in an archive install")
+        sources = [str(p.relative_to(ROOT)) for p in PLUGIN.rglob("*") if p.is_file()]
+        self.assertTrue(sources, "Plugin source files are absent")
+        result = subprocess.run(["git", "check-ignore", "--no-index", "--stdin"], cwd=ROOT,
+                                input="\n".join(sources) + "\n", text=True, capture_output=True)
+        self.assertEqual(result.returncode, 1, result.stdout or result.stderr)
+
     def test_marketplace_points_to_matching_plugin_version(self):
         marketplace = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
         entry = marketplace["plugins"][0]

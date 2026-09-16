@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly brief"
+  short_description: "Turn the week's important changes into decisions, owners and dates"
+  default_prompt: "Use $pharma-ci-weekly-brief to write this week's brief from my alerts."

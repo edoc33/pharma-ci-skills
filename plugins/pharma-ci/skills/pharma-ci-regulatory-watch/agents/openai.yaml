@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regulatory watch"
+  short_description: "Watch FDA, EMA, NICE and national agency pages with the right cadence"
+  default_prompt: "Use $pharma-ci-regulatory-watch to plan regulator page monitors for my products."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review route"
+  short_description: "Give every alert a named owner and a review item"
+  default_prompt: "Use $pharma-ci-review-route to turn this alert into an owned review item."

@@ -1,0 +1,208 @@
+[
+  {
+    "row": "1",
+    "url": "https://clinicaltrials.gov/search?cond=Obesity&aggFilters=phase%3A3&sort=StudyFirstPostDate&limit=100",
+    "checked_at": "2026-09-16T04:34:05.625503+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://clinicaltrials.gov/search?cond=Obesity&aggFilters=phase%3A3&sort=StudyFirstPostDate&limit=100",
+    "content_type": "text/html"
+  },
+  {
+    "row": "2",
+    "url": "https://clinicaltrials.gov/study/NCT07311850",
+    "checked_at": "2026-09-16T04:34:05.625833+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://clinicaltrials.gov/study/NCT07311850",
+    "content_type": "text/html"
+  },
+  {
+    "row": "3",
+    "url": "https://www.pfizer.com/science/drug-product-pipeline",
+    "checked_at": "2026-09-16T04:34:05.625948+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.pfizer.com/science/drug-product-pipeline",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "4",
+    "url": "https://www.novartis.com/research-development/novartis-pipeline?page=0",
+    "checked_at": "2026-09-16T04:34:05.626078+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.novartis.com/research-development/novartis-pipeline?page=0",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "5",
+    "url": "https://www.novartis.com/research-development/novartis-pipeline?page=1",
+    "checked_at": "2026-09-16T04:34:05.626183+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.novartis.com/research-development/novartis-pipeline?page=1",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "6",
+    "url": "https://euclinicaltrials.eu/ctis-public/view/2025-523657-34-00",
+    "checked_at": "2026-09-16T04:34:05.626238+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://euclinicaltrials.eu/ctis-public/view/2025-523657-34-00",
+    "content_type": "text/html"
+  },
+  {
+    "row": "7",
+    "url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
+    "checked_at": "2026-09-16T04:34:05.626288+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "8",
+    "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar",
+    "checked_at": "2026-09-16T04:34:05.626333+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "9",
+    "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters",
+    "checked_at": "2026-09-16T04:34:05.739084+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "10",
+    "url": "https://www.ema.europa.eu/en/news",
+    "checked_at": "2026-09-16T04:34:05.751739+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.ema.europa.eu/en/news",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "11",
+    "url": "https://www.fda.gov/drugs/warning-letters-and-notice-violation-letters-pharmaceutical-companies/untitled-letters",
+    "checked_at": "2026-09-16T04:34:05.773987+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.fda.gov/drugs/warning-letters-and-notice-violation-letters-pharmaceutical-companies/untitled-letters",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "12",
+    "url": "https://meetings.asco.org/abstracts-presentations",
+    "checked_at": "2026-09-16T04:34:05.776223+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://meetings.asco.org/abstracts-presentations",
+    "content_type": "text/html"
+  },
+  {
+    "row": "13",
+    "url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026/programme",
+    "checked_at": "2026-09-16T04:34:05.785444+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026/programme",
+    "content_type": "text/html;charset=utf-8"
+  },
+  {
+    "row": "14",
+    "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
+    "checked_at": "2026-09-16T04:34:05.900955+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 406,
+    "final_url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "15",
+    "url": "https://www.nice.org.uk/guidance/indevelopment/gid-ta11221",
+    "checked_at": "2026-09-16T04:34:05.908858+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.nice.org.uk/guidance/indevelopment/gid-ta11221",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "row": "16",
+    "url": "https://www.cda-amc.ca/reimbursement-review-reports",
+    "checked_at": "2026-09-16T04:34:05.934865+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 403,
+    "final_url": "https://www.cda-amc.ca/reimbursement-review-reports",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "17",
+    "url": "https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/",
+    "checked_at": "2026-09-16T04:34:05.989917+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.g-ba.de/themen/arzneimittel/arzneimittel-richtlinie-anlagen/nutzenbewertung-35a/",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "18",
+    "url": "https://icer.org/explore-our-research/assessments/",
+    "checked_at": "2026-09-16T04:34:06.033770+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 403,
+    "final_url": "https://icer.org/explore-our-research/assessments/",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "19",
+    "url": "https://www.nccn.org/updates",
+    "checked_at": "2026-09-16T04:34:06.104976+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.nccn.org/recent-NCCN-updates",
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "row": "20",
+    "url": "https://www.pfizer.com/newsroom/press-releases",
+    "checked_at": "2026-09-16T04:34:06.138075+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.pfizer.com/newsroom/press-releases",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "21",
+    "url": "https://investor.lilly.com/webcasts-and-presentations",
+    "checked_at": "2026-09-16T04:34:06.157312+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": null,
+    "error": "ReadTimeout"
+  },
+  {
+    "row": "22",
+    "url": "https://www.pfizer.com/",
+    "checked_at": "2026-09-16T04:34:06.178990+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.pfizer.com/",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "row": "23",
+    "url": "https://www.cvshealth.com/services",
+    "checked_at": "2026-09-16T04:34:06.210040+00:00",
+    "scope": "HTTP reachability only; browser and capture-preview suitability not verified",
+    "status": 200,
+    "final_url": "https://www.cvshealth.com/services",
+    "content_type": "text/html;charset=utf-8"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "pharma-ci",
+  "displayName": "Pharma CI",
+  "version": "0.1.1",
+  "description": "Nine skills that turn public page changes into pharma competitive-intelligence work: watchlists, importance rules, source monitors, review routing and weekly briefs.",
+  "author": {
+    "name": "edoc33",
+    "url": "https://github.com/edoc33"
+  },
+  "homepage": "https://github.com/edoc33/pharma-ci-skills",
+  "repository": "https://github.com/edoc33/pharma-ci-skills",
+  "license": "MIT",
+  "keywords": [
+    "pharma",
+    "competitive-intelligence",
+    "regulatory-intelligence",
+    "clinical-trials",
+    "monitoring",
+    "market-access",
+    "visualping"
+  ]
+}

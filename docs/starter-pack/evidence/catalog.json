@@ -1,0 +1,25 @@
+{
+  "examples": [
+    {
+      "key": "fda",
+      "comparison": "evidence/assets/fda-isembyld-comparison.jpg",
+      "before": "evidence/assets/fda-isembyld-before.jpg"
+    },
+    {
+      "key": "nice",
+      "comparison": "evidence/assets/nice-guidance-comparison.jpg"
+    },
+    {
+      "key": "trial",
+      "comparison": "evidence/assets/trial-sites-comparison.jpg"
+    },
+    {
+      "key": "pfizer",
+      "comparison": "evidence/assets/pfizer-campaign-comparison.jpg"
+    },
+    {
+      "key": "cvs",
+      "comparison": "evidence/assets/cvs-announcement-comparison.jpg"
+    }
+  ]
+}

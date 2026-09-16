@@ -1,5 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
-pharma-ci/
+/pharma-ci/
 .env
+
+/dist/

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "example_id": "nice-guidance",
+  "title": "NICE published list: TA1190 and TA1191",
+  "primary_workshop_input": false,
+  "source": {
+    "name": "NICE published guidance",
+    "url": "https://www.nice.org.uk/guidance/published"
+  },
+  "observed_at": "2026-09-09T17:55:11.000Z",
+  "previous_capture_at": "2026-09-08T09:17:16.000Z",
+  "source_published_at": null,
+  "source_dates": [
+    {
+      "kind": "listing_date",
+      "value": "2026-09-09",
+      "scope": "TA1190 and TA1191 rows in the saved NICE list"
+    }
+  ],
+  "saved_alert": {
+    "verification": "reproduced_from_saved_event",
+    "important": true,
+    "ai_summary": "The published guidance list was updated to include two new technology appraisals — TA1190 (durvalumab with platinum‑based chemotherapy, then with or without olaparib, for untreated advanced or recurrent endometrial cancer) and TA1191 (nemolizumab for treating moderate to severe prurigo nodularis), both dated 9 September 2026 — while entries for HTG780 (ex‑situ machine perfusion devices) and TA1186 (lisocabtagene maraleucel, terminated evaluation) were removed.",
+    "watch_rule": "Important changes: new rules, regulations, guidance documents, enforcement actions, recalls, safety alerts, deadlines, comment periods, fee schedules, or compliance dates being added or modified. Ignore: navigation/UI changes, font/color tweaks, copyright year updates, social media counters, layout shifts, or archived content moving without text changes."
+  },
+  "verified_observation": "The comparison highlights TA1190 and TA1191 in the visible first ten results, both dated 9 September 2026.",
+  "assets": {
+    "comparison": "../assets/nice-guidance-comparison.jpg",
+    "before": null
+  },
+  "proposed_review": {
+    "status": "proposed_not_executed",
+    "owner": "[Choose UK market-access reviewer]",
+    "backup": "[Choose backup reviewer]",
+    "next_action": "[Proposed: open the relevant appraisal, verify the recommendation and eligible population, and assess relevance to the asset briefing]",
+    "decision": "[Reviewer records the decision after checking the source]"
+  },
+  "limitations": [
+    "The saved AI Summary is reproduced verbatim. Its removed wording refers to older entries leaving the visible first page; the evidence does not establish withdrawn guidance.",
+    "A listing alone does not establish the recommendation direction or a change in market access. Read the linked appraisal separately.",
+    "The prior capture time is retained from the saved event. A separate before image is not included in this compact package.",
+    "A UK market-access owner and asset mandate are proposed workshop choices."
+  ]
+}
