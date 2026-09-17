@@ -1,6 +1,6 @@
 # Route a source alert to an owned review queue
 
-This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. It is a workshop configuration guide; it has not been deployed or run in your tenant.
+This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. Use it after the session to configure and test a route in your own tenant. It has not been deployed or run in your tenant.
 
 The first version preserves the incoming message and gives it an owner. The reviewer then checks the linked source and completes the evidence fields. Add AI extraction only after testing the exact alert format and an AI connection approved by your organization.
 
@@ -60,9 +60,11 @@ Name the reviewer, backup, flow/connection owner and source-maintenance owner. T
 owner checks failed captures, changed URLs, new pages, expired access and pagination. A new-page
 process is separate from the importance rule. Record the last check and next recheck date.
 
-The current workshop uses a saved FDA input for the proposed build. Read the
-[starter-pack workflow](../../../docs/starter-pack/m365-workflow.md) for its event mapping and
-fallback. This recipe establishes no completed flow in the attendee's tenant.
+The workshop uses a saved FDA alert for discussion. Read the
+[saved-alert walkthrough](../../../docs/starter-pack/workflow-walkthrough.md) for its questions,
+expected answers and evidence mapping. Use the
+[starter-pack workflow](../../../docs/starter-pack/m365-workflow.md) for setup after the session.
+This recipe establishes no completed flow in the attendee's tenant.
 
 ## Add AI after the routing test
 

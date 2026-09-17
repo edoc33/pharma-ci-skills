@@ -51,7 +51,7 @@ def main():
     *{box-sizing:border-box}body{margin:0;background:#f7f9fe;color:#0c2235;font:18px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     main{max-width:960px;margin:auto;padding:56px 28px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(38px,7vw,64px);letter-spacing:-.03em;margin:0 0 20px}h2{font-size:30px;margin-top:44px}h3{font-size:23px}p{max-width:760px}a{color:#0b51ae;text-underline-offset:3px}img{max-width:100%;height:auto;display:block;background:white}figure{margin:24px 0}figcaption,.small{font-size:14px;color:#526066}.links{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.links a,button{padding:10px 16px;background:white;border:1px solid #aab8bd;border-radius:5px;font:inherit;color:#0b51ae;cursor:pointer}details{border-top:1px solid #cbd2d4;padding:20px 0}summary{font-size:24px;cursor:pointer}.detail-body{padding-top:8px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px 8px;border-bottom:1px solid #cbd2d4;text-align:left;vertical-align:top}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:18px;font:14px/1.5 monospace}code{overflow-wrap:anywhere}.policy{background:white;padding:22px;font-size:21px}textarea{display:block;width:100%;min-height:85px;margin:8px 0 22px;padding:12px;font:inherit;border:1px solid #aab8bd;border-radius:4px}label{font-weight:600}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #0b51ae;outline-offset:3px}.source{margin-bottom:28px}@media(max-width:560px){main{padding:32px 20px}table{display:block;overflow-x:auto}}@media print{body{background:white;font-size:11pt}main{padding:0}.links,button{display:none}h1{font-size:30pt}h2{font-size:22pt}details{break-inside:avoid}img{max-height:300px;width:auto}}'''
     sections = []
-    for name in ['first-run.md','core-rules.md','evidence-exercises.md','m365-workflow.md','demo-dry-run.md','link-verification.md']:
+    for name in ['first-run.md','core-rules.md','evidence-exercises.md','m365-workflow.md','workflow-walkthrough.md','link-verification.md']:
         lines=(PACK/name).read_text().splitlines()
         body=markdown.markdown('\n'.join(lines[1:]),extensions=['tables','fenced_code'])
         sections.append(f'<details><summary>{html.escape(lines[0].removeprefix("# "))}</summary><div class="detail-body">{body}</div></details>')
@@ -59,17 +59,18 @@ def main():
     prompt=html.escape((PACK/'triage-prompt.txt').read_text())
     fda_path=events['fda']['comparison']
     page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pharma CI starter pack</title><style>{css}</style></head><body><main>
-<h1>Make one source useful.</h1><p>Choose the change you need to see. Give it a reviewer. Keep the evidence with the decision.</p><p class="small">Pharma CI USA · September 17, 2026 · 11:15-11:45 EDT<br>Updated September 16. Public source examples selected independently of customer watchlists.</p>
+<h1>Make one source useful.</h1><p>Choose the change you need to see. Give it a reviewer. Keep the evidence with the decision.</p><p class="small">Pharma CI USA · September 17, 2026 · 11:15-11:45 EDT<br>Updated September 17. Public source examples selected independently of customer watchlists.</p>
 <div class="links"><a href="pharma-ci-starter-guide.pdf">Short PDF</a><a href="source-directory.csv" download>Source directory</a><a href="import-tab.csv" download>Import CSV</a><a href="review-item-template.csv" download>Review template</a><a href="{DOWNLOAD}pharma-ci-starter-pack.zip">Full ZIP</a></div>
+<p>The session uses saved alerts and guided discussion. Use the setup recipes and optional skills after the session.</p>
 <h2>A saved change starts the review.</h2><p>This actual FDA comparison highlights an added Isembyld entry. Open the source detail before drawing an indication or label conclusion. The reviewer and next action are proposed.</p><figure><img src="{fda_path}" alt="Original Visualping highlighted comparison of the FDA approval listing"><figcaption>Saved source evidence. Detection time and classification are recorded separately from source dates in <a href="evidence/README.md">the evidence notes</a>.</figcaption></figure>
 <p class="policy">Choose delivery: every captured edit, or IMPORTANT changes only.</p><p>Every change event includes IMPORTANT and an AI Summary. Test small wording and image edits when they matter. A relevance rule can assess only content included in the capture.</p>
 {''.join(sections)}
 <h2>{counts}.</h2><p>Replace every bracketed scope and example record. Check known records and discovery pages separately. Assign someone to maintain coverage.</p><details><summary>Open the source directory</summary>{directory}</details>
 <h2>Draft the review item.</h2><p>Use an approved AI tool with the source evidence. Check its output before routing.</p><button type="button" id="copy">Copy prompt</button><p id="copy-status" class="small" aria-live="polite"></p><pre id="prompt">{prompt}</pre>
-<h2>Your first workflow</h2>'''
+<h2>Your first workflow</h2><p>We will watch ___ for ___, have ___ review it by ___, and use the checked result to ___.</p>'''
     for key,label in [('source','Source and watch question'),('reviewer','Reviewer, backup and destination'),('policy','Every-edit or IMPORTANT-only delivery'),('maintenance','Maintenance owner and source-check schedule'),('measure','Success measure and review date')]:
         page+=f'<label for="{key}">{label}</label><textarea id="{key}"></textarea>'
-    page+='''<p class="small">Answers stay in this page while it is open. Copy or print them before closing. Nothing is sent or stored online.</p><button type="button" onclick="window.print()">Print your worksheet</button><p class="small">The M365 route remains a configuration recipe. A successful run and recording are unverified. <a href="README.md">File index and limitations</a>.</p></main><script>document.getElementById('copy').addEventListener('click',async()=>{const text=document.getElementById('prompt').textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='Prompt copied.'}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('prompt'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copy-status').textContent='Prompt selected. Use your browser Copy command.'}});</script></body></html>'''
+    page+='''<p class="small">Answers stay in this page while it is open. Copy or print them before closing. Nothing is sent or stored online.</p><button type="button" onclick="window.print()">Print your worksheet</button><p class="small">The M365 route remains a configuration recipe. A successful tenant run remains unverified. <a href="README.md">File index and limitations</a>.</p></main><script>document.getElementById('copy').addEventListener('click',async()=>{const text=document.getElementById('prompt').textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='Prompt copied.'}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('prompt'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copy-status').textContent='Prompt selected. Use your browser Copy command.'}});</script></body></html>'''
     for name in ('index.html','handout.html'):
         (PACK/name).write_text(page)
 
@@ -96,6 +97,7 @@ def main():
         'Choose delivery. Review every captured edit, or only IMPORTANT changes. Test the capture before relying on filtering.',
         'Name the reviewer, backup and maintenance owner. Record the action and inspect source failures before expanding.',
     ],1):p(f'{n}. {text}')
+    p('The session uses saved-alert discussions. Follow the setup recipes after the session.', 'small')
     p('Every Visualping change event has a binary IMPORTANT flag and an AI Summary. The saved comparison remains the evidence.','small')
     p(f'<a href="{DOWNLOAD}pharma-ci-starter-pack.zip" color="#0b51ae">Download the full pack</a>: {counts}, prompts, templates and actual saved examples. Unzip and open index.html.','small')
     p(f'<a href="https://github.com/edoc33/pharma-ci-skills" color="#0b51ae">Optional skills for your AI assistant</a>. The manual first run needs no API key or M365 connection.','small')
@@ -136,13 +138,14 @@ def main():
     p('Keep the source, saved classification, reviewer, backup and action together. A platform event ID and an email message ID identify different things.')
     p('Before enabling the route, verify tenant permissions, connections, duplicates, missing evidence and failure handling. The included recipe has no verified tenant execution.','small')
     heading('Your first workflow')
+    p('We will watch ___ for ___, have ___ review it by ___, and use the checked result to ___.', 'small')
     for text in ['Source and watch question','Reviewer, backup and destination','Delivery policy','Maintenance owner and check schedule','Success measure and review date']:
         p(text);story.append(Spacer(1,17))
-    p('The maintenance owner checks new/moved pages, pagination, annual URLs and failed monitors. Recheck selected sources before the session.','small')
+    p('The maintenance owner checks new/moved pages, pagination, annual URLs and failed monitors. Recheck selected sources before enabling the route.','small')
 
     def footer(canvas,doc):
         canvas.setFont('Helvetica',8);canvas.setFillColor(colors.HexColor('#526066'))
-        canvas.drawString(26,18,'Pharma CI · Updated 16 September 2026');canvas.drawRightString(334,18,str(doc.page))
+        canvas.drawString(26,18,'Pharma CI · Updated 17 September 2026');canvas.drawRightString(334,18,str(doc.page))
     SimpleDocTemplate(str(PACK/'pharma-ci-starter-guide.pdf'),pagesize=(360,600),leftMargin=26,rightMargin=26,topMargin=28,bottomMargin=34,title='Pharma CI starter guide',author='Workshop materials').build(story,onFirstPage=footer,onLaterPages=footer)
     OUT.mkdir(exist_ok=True)
     shutil.copy2(ROOT/'THIRD_PARTY_NOTICES.md',PACK/'THIRD_PARTY_NOTICES.md')

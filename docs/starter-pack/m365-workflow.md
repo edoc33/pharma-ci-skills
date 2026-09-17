@@ -1,6 +1,6 @@
 # Route a source alert to an owned review queue
 
-This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. It is a workshop configuration guide; it has not been deployed or run in your tenant.
+This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. Use it after the session to configure and test a route in your own tenant. It has not been deployed or run in your tenant. The session's [saved-alert walkthrough](workflow-walkthrough.md) uses prepared evidence and discussion.
 
 The first version preserves the incoming message and gives it an owner. The reviewer then checks the linked source and completes the evidence fields. Add AI extraction only after testing the exact alert format and an AI connection approved by your organization.
 
@@ -64,4 +64,4 @@ Store saved platform IMPORTANT separately from a new proposed classification. Ma
 
 Name a maintenance owner for new/moved pages, pagination, annual sources and failed captures. Name a flow owner and backup for connector failures and missing queue items. Keep these responsibilities explicit even when one person holds both.
 
-Connector documentation was rechecked September 16, 2026. A tenant-specific run and fallback recording remain unverified.
+Connector documentation was rechecked September 16, 2026. A tenant-specific workflow run remains unverified.

@@ -1,7 +1,7 @@
 {
   "name": "pharma-ci",
   "displayName": "Pharma CI",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Nine skills that turn public page changes into pharma competitive-intelligence work: watchlists, importance rules, source monitors, review routing and weekly briefs.",
   "author": {
     "name": "edoc33",

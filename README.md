@@ -15,7 +15,9 @@ Open the [starter-pack guide](docs/starter-pack/README.md), or download the
 [PDF guide](https://github.com/edoc33/pharma-ci-skills/releases/latest/download/pharma-ci-starter-guide.pdf)
 and [complete ZIP](https://github.com/edoc33/pharma-ci-skills/releases/latest/download/pharma-ci-starter-pack.zip).
 The pack includes 22 public sources across 23 starter URLs, saved evidence and proposed review
-tasks. It establishes no completed live M365 handoff. See [third-party asset notices](THIRD_PARTY_NOTICES.md)
+tasks. The session uses saved-alert discussions; setup recipes are for use after the session.
+Start with the [saved-alert walkthrough](docs/starter-pack/workflow-walkthrough.md). The M365 route
+is a configuration recipe with no verified tenant execution. See [third-party asset notices](THIRD_PARTY_NOTICES.md)
 for the source screenshots and marks.
 
 ## Install

@@ -1,8 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pharma CI starter pack</title><style>
     *{box-sizing:border-box}body{margin:0;background:#f7f9fe;color:#0c2235;font:18px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     main{max-width:960px;margin:auto;padding:56px 28px}h1,h2,h3{line-height:1.2}h1{font-size:clamp(38px,7vw,64px);letter-spacing:-.03em;margin:0 0 20px}h2{font-size:30px;margin-top:44px}h3{font-size:23px}p{max-width:760px}a{color:#0b51ae;text-underline-offset:3px}img{max-width:100%;height:auto;display:block;background:white}figure{margin:24px 0}figcaption,.small{font-size:14px;color:#526066}.links{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.links a,button{padding:10px 16px;background:white;border:1px solid #aab8bd;border-radius:5px;font:inherit;color:#0b51ae;cursor:pointer}details{border-top:1px solid #cbd2d4;padding:20px 0}summary{font-size:24px;cursor:pointer}.detail-body{padding-top:8px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px 8px;border-bottom:1px solid #cbd2d4;text-align:left;vertical-align:top}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:18px;font:14px/1.5 monospace}code{overflow-wrap:anywhere}.policy{background:white;padding:22px;font-size:21px}textarea{display:block;width:100%;min-height:85px;margin:8px 0 22px;padding:12px;font:inherit;border:1px solid #aab8bd;border-radius:4px}label{font-weight:600}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #0b51ae;outline-offset:3px}.source{margin-bottom:28px}@media(max-width:560px){main{padding:32px 20px}table{display:block;overflow-x:auto}}@media print{body{background:white;font-size:11pt}main{padding:0}.links,button{display:none}h1{font-size:30pt}h2{font-size:22pt}details{break-inside:avoid}img{max-height:300px;width:auto}}</style></head><body><main>
-<h1>Make one source useful.</h1><p>Choose the change you need to see. Give it a reviewer. Keep the evidence with the decision.</p><p class="small">Pharma CI USA · September 17, 2026 · 11:15-11:45 EDT<br>Updated September 16. Public source examples selected independently of customer watchlists.</p>
+<h1>Make one source useful.</h1><p>Choose the change you need to see. Give it a reviewer. Keep the evidence with the decision.</p><p class="small">Pharma CI USA · September 17, 2026 · 11:15-11:45 EDT<br>Updated September 17. Public source examples selected independently of customer watchlists.</p>
 <div class="links"><a href="pharma-ci-starter-guide.pdf">Short PDF</a><a href="source-directory.csv" download>Source directory</a><a href="import-tab.csv" download>Import CSV</a><a href="review-item-template.csv" download>Review template</a><a href="https://github.com/edoc33/pharma-ci-skills/releases/latest/download/pharma-ci-starter-pack.zip">Full ZIP</a></div>
+<p>The session uses saved alerts and guided discussion. Use the setup recipes and optional skills after the session.</p>
 <h2>A saved change starts the review.</h2><p>This actual FDA comparison highlights an added Isembyld entry. Open the source detail before drawing an indication or label conclusion. The reviewer and next action are proposed.</p><figure><img src="evidence/assets/fda-isembyld-comparison.jpg" alt="Original Visualping highlighted comparison of the FDA approval listing"><figcaption>Saved source evidence. Detection time and classification are recorded separately from source dates in <a href="evidence/README.md">the evidence notes</a>.</figcaption></figure>
 <p class="policy">Choose delivery: every captured edit, or IMPORTANT changes only.</p><p>Every change event includes IMPORTANT and an AI Summary. Test small wording and image edits when they matter. A relevance rule can assess only content included in the capture.</p>
 <details><summary>Build your first review item</summary><div class="detail-body"><p>Choose one public page your team already checks and the decision it supports. You can complete this first run in a spreadsheet before connecting a monitoring tool.</p>
@@ -100,7 +101,7 @@ The image establishes new entries in the captured list. Older entries leaving th
 <p>The <a href="evidence/fixtures/pfizer-campaign.json">Pfizer fixture</a> highlights campaign wording. A proposed commercial CI reviewer checks the message against the competitor brief. Decide whether the brief requires every small wording or image edit, and choose delivery accordingly.</p>
 <p><img alt="Saved CVS comparison showing an availability announcement" src="evidence/assets/cvs-announcement-comparison.jpg" /></p>
 <p>The <a href="evidence/fixtures/cvs-announcement.json">CVS fixture</a> highlights a vaccine-availability announcement. A proposed reviewer opens the announcement and checks product, location and offer details. The listing alone does not establish current local stock.</p>
-<p>Separate before captures were unavailable for both commercial examples. Describe the highlighted content and leave exact prior copy unknown. Their saved classification and summary are omitted from this package because they were not verified for inclusion; this does not imply those Visualping fields are absent.</p></div></details><details><summary>Route a source alert to an owned review queue</summary><div class="detail-body"><p>This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. It is a workshop configuration guide; it has not been deployed or run in your tenant.</p>
+<p>Separate before captures were unavailable for both commercial examples. Describe the highlighted content and leave exact prior copy unknown. Their saved classification and summary are omitted from this package because they were not verified for inclusion; this does not imply those Visualping fields are absent.</p></div></details><details><summary>Route a source alert to an owned review queue</summary><div class="detail-body"><p>This recipe uses a shared Outlook mailbox, Power Automate, and a SharePoint list. Teams is an optional notification step. Use it after the session to configure and test a route in your own tenant. It has not been deployed or run in your tenant. The session's <a href="workflow-walkthrough.md">saved-alert walkthrough</a> uses prepared evidence and discussion.</p>
 <p>The first version preserves the incoming message and gives it an owner. The reviewer then checks the linked source and completes the evidence fields. Add AI extraction only after testing the exact alert format and an AI connection approved by your organization.</p>
 <pre><code class="language-text">Source alert email → Shared mailbox → Power Automate → SharePoint review item
                                                           ↓
@@ -183,57 +184,52 @@ The image establishes new entries in the captured list. Older entries leaving th
 <p>Choose every captured edit or IMPORTANT-only delivery at the monitoring source. A downstream route cannot review changes that were filtered out upstream. Keep sensitive brand/HCP wording and image edits available when the brief requires them. Retain uncertainty in the review queue.</p>
 <p>Store saved platform IMPORTANT separately from a new proposed classification. Map <code>observed_at</code>, <code>ai_summary</code>, <code>classification_provenance</code>, reviewer, backup and evidence reference from the documented event input. The included saved-event fixtures are an offline source example. Their local event IDs are not Outlook message IDs; only a real trigger supplies that email identifier.</p>
 <p>Name a maintenance owner for new/moved pages, pagination, annual sources and failed captures. Name a flow owner and backup for connector failures and missing queue items. Keep these responsibilities explicit even when one person holds both.</p>
-<p>Connector documentation was rechecked September 16, 2026. A tenant-specific run and fallback recording remain unverified.</p></div></details><details><summary>Eight-minute demonstration</summary><div class="detail-body"><p>The workshop is September 17, 2026, 11:15-11:45 EDT. The live build runs at elapsed 13:00-21:00. Eight minutes is a rehearsal budget. Account setup and tenant authorization happen beforehand.</p>
-<p>Use the bundled FDA Isembyld comparison as the source input. It is an actual saved Visualping event. Its saved detection time, IMPORTANT flag, rule, summary and source files are documented in <code>evidence/</code>. The proposed reviewer and action are teaching fields. A successful M365 execution is still unverified.</p>
+<p>Connector documentation was rechecked September 16, 2026. A tenant-specific workflow run remains unverified.</p></div></details><details><summary>Discuss a saved alert and choose the next action</summary><div class="detail-body"><p>The Pharma CI USA session on September 17, 2026 uses saved source comparisons and guided discussion. No account setup, live build or message sending is required during the session.</p>
+<p>Open the <a href="evidence/fixtures/fda-approval.json">FDA Isembyld fixture</a>, <a href="evidence/assets/fda-isembyld-before.jpg">earlier capture</a> and <a href="evidence/assets/fda-isembyld-comparison.jpg">highlighted comparison</a>. These are saved source evidence. The reviewer, routing and next action below are proposed. A successful Microsoft 365 execution remains unverified.</p>
+<h2>Work through the alert</h2>
 <table>
 <thead>
 <tr>
-<th>Demo elapsed</th>
-<th>Visible action</th>
-<th>Prepared dependency</th>
+<th>Question</th>
+<th>Expected answer or decision</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0:00-1:30</td>
-<td>Open the FDA source and saved comparison; identify the added entry</td>
-<td>Local evidence and working source link</td>
+<td>What changed?</td>
+<td>The highlighted FDA list adds an Isembyld row. Retain the source link and saved comparison.</td>
 </tr>
 <tr>
-<td>1:30-3:00</td>
-<td>Show one source selection, importance rule and delivery choice</td>
-<td>Authorized sandbox, working preview and known baseline</td>
+<td>What do the dates tell us?</td>
+<td>The row gives an approval date of 11 September 2026. The saved event records detection at 22:30:54 UTC that day. The page's publication time is unknown.</td>
 </tr>
 <tr>
-<td>3:00-4:30</td>
-<td>Check the saved summary and identify observed facts</td>
-<td>Saved event fixture and original comparison</td>
+<td>How was the alert classified?</td>
+<td>The saved rule asks for new approvals and the event has IMPORTANT=true. Choose every-edit or IMPORTANT-only delivery for your own watch question. The saved flag alone does not establish delivery.</td>
 </tr>
 <tr>
-<td>4:30-6:30</td>
-<td>Map evidence to the review item; choose owner and backup</td>
-<td>Prepared approved test queue, or labeled proposed output</td>
+<td>Who checks it, and by when?</td>
+<td>Choose the asset or therapy-area reviewer and backup. Set the deadline from the decision the team needs to make. The example leaves these assignments proposed.</td>
 </tr>
 <tr>
-<td>6:30-8:00</td>
-<td>Verify source, owner and next action; open the starter pack</td>
-<td>Tested download and offline files</td>
+<td>What happens next?</td>
+<td>The reviewer opens the FDA detail, checks asset and indication scope, and decides whether the briefing needs an update. Record the source check, remaining questions and next action.</td>
 </tr>
 </tbody>
 </table>
-<p>Use the approval-list prompt in <code>core-rules.md</code>. Ask the audience which reviewer and backup would check this entry. A proposed action is to open the approval detail and confirm whether the asset and indication belong in the team's briefing.</p>
-<h2>Map a saved event truthfully</h2>
-<p>Map detection to <code>observed_at</code>, the saved platform value to <code>saved_important</code>, and the saved summary to <code>ai_summary</code>. Preserve the source URL and evidence-file reference. Leave unknown publication and capture dates null. A platform process ID is not an email message ID. Use the local fixture ID for an offline example; use the actual trigger message ID only when testing the email route.</p>
-<p>Keep <code>owner</code>, <code>backup_owner</code>, <code>destination</code> and <code>action</code> visibly proposed until chosen and executed. Save the real run ID, queue-item URL and result only after verifying them. Fill the workflow section of <code>saved-event-manifest.json</code> at that point.</p>
-<h2>Before stage</h2>
-<ul>
-<li>Confirm source access, the signed-in tenant, approved sandbox recipients, connections and queue permissions. Check the current monitor preview.</li>
-<li>Reconcile one relevant event, one repeat and one unreadable item with the queue. Confirm reviewer and backup access. Test notification failure after item creation.</li>
-<li>Download the pack and verify the QR on a phone. Display only the public-source examples.</li>
-<li>Record actual elapsed time. Exit the build at session minute 21 even if incomplete.</li>
-</ul>
-<h2>Fallback</h2>
-<p>After sixty seconds of unexpected loading or authentication, show the local comparison and a proposed review item. Say: “This is the saved source change. These are the fields the workflow should create.” The pack includes real source evidence, while the route remains a configuration recipe until a run is verified. Describe a recorded workflow replay only when the actual input, output, run and destination are available.</p></div></details><details><summary>Source-link checks</summary><div class="detail-body"><p>Checked September 12, 2026. Direct GET requests returned HTTP 200 for 20 of the 21 URLs. Lilly timed out in that path, then opened with the web reader. These results establish limited reachability. They do not prove that a page monitor can load the required content, capture the chosen region, or detect the intended changes.</p>
+<p>The listing and saved AI Summary do not establish launch availability, price or positioning. Keep the observed change separate from a proposed implication.</p>
+<h2>Map the evidence to a review item</h2>
+<p>Use <a href="review-item-template.csv">review-item-template.csv</a> and its <a href="review-item-schema.json">field dictionary</a>. Map detection to <code>observed_at</code>, the saved platform value to <code>saved_important</code>, and the saved summary to <code>ai_summary</code>. Preserve the source URL and evidence-file reference. Keep the approval date separate from detection. Leave unavailable publication and capture dates empty or null, as the output format requires.</p>
+<p>Use the local fixture ID for the offline exercise. A real email route supplies its own trigger message ID. Keep <code>owner</code>, <code>backup_owner</code>, <code>destination</code>, <code>due_at</code> and <code>action</code> proposed until the team chooses them. Record execution only after a verified run.</p>
+<p>Finish by completing this sentence:</p>
+<blockquote>
+<p>We will watch ___ for <strong><em>, have ___ review it by </em></strong>, and use the checked result to ___.</p>
+</blockquote>
+<p>Then name the backup reviewer and the person who checks failed monitors, changed URLs and new pages.</p>
+<h2>Try the workflow after the session</h2>
+<p>Start with <a href="first-run.md">first-run.md</a> and a spreadsheet or an approved AI tool. The manual exercise needs no monitoring subscription, API key or Microsoft 365 connection.</p>
+<p>For an automated route, follow <a href="m365-workflow.md">m365-workflow.md</a> in an authorized test environment. Test a relevant event, a repeat and an item with missing evidence. Verify the queue item and reviewer access. Add notifications after the queue works, and test notification failures separately.</p>
+<p>Record the run ID, queue-item URL and checked result in <a href="saved-event-manifest.json">saved-event-manifest.json</a> only after observing the run. The bundled source comparisons establish the page changes; the manifest keeps workflow execution status separate.</p></div></details><details><summary>Source-link checks</summary><div class="detail-body"><p>Checked September 12, 2026. Direct GET requests returned HTTP 200 for 20 of the 21 URLs. Lilly timed out in that path, then opened with the web reader. These results establish limited reachability. They do not prove that a page monitor can load the required content, capture the chosen region, or detect the intended changes.</p>
 <p>ClinicalTrials.gov and CTIS returned application shells. The FDA calendar returned JSON in the tested request path. ASCO redirected to search. NICE and NCCN behaved differently across fetch methods. None of these is evidence that the URL is dead. Use the presenter browser and monitor preview for the final test.</p>
 <p>Recheck selected sources before enabling them and on the session morning. Test content, pagination, authentication, and output before enabling a monitor.</p>
 <table>
@@ -292,7 +288,7 @@ The image establishes new entries in the captured list. Older entries leaving th
 <td>8</td>
 <td><a href="https://www.fda.gov/advisory-committees/advisory-committee-calendar">FDA advisory committee calendar</a></td>
 <td>200</td>
-<td>HTTP 200 returned application/json in this request path. Confirm the meeting list and individual notice in the stage browser.</td>
+<td>HTTP 200 returned application/json in this request path. Confirm the meeting list and individual notice in your browser.</td>
 </tr>
 <tr>
 <td>9</td>
@@ -397,4 +393,4 @@ reviewed_by, reviewed_at, action, delivery_policy, maintenance_owner.
 
 Use null for unknown facts and for an undetermined proposed important value. Preserve saved_important exactly when supplied. Set important to your proposed rule match and identify that proposal in classification_provenance. Keep saved platform output separate from your source check. Set needs_review=true when a required input is missing, ambiguous or conflicting. Such items remain visible for human review regardless of important. Use owner: unassigned when no reviewer is chosen; use review_status: Unreviewed. Do not invent a completed review, routed message or business outcome.
 </pre>
-<h2>Your first workflow</h2><label for="source">Source and watch question</label><textarea id="source"></textarea><label for="reviewer">Reviewer, backup and destination</label><textarea id="reviewer"></textarea><label for="policy">Every-edit or IMPORTANT-only delivery</label><textarea id="policy"></textarea><label for="maintenance">Maintenance owner and source-check schedule</label><textarea id="maintenance"></textarea><label for="measure">Success measure and review date</label><textarea id="measure"></textarea><p class="small">Answers stay in this page while it is open. Copy or print them before closing. Nothing is sent or stored online.</p><button type="button" onclick="window.print()">Print your worksheet</button><p class="small">The M365 route remains a configuration recipe. A successful run and recording are unverified. <a href="README.md">File index and limitations</a>.</p></main><script>document.getElementById('copy').addEventListener('click',async()=>{const text=document.getElementById('prompt').textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='Prompt copied.'}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('prompt'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copy-status').textContent='Prompt selected. Use your browser Copy command.'}});</script></body></html>
+<h2>Your first workflow</h2><p>We will watch ___ for ___, have ___ review it by ___, and use the checked result to ___.</p><label for="source">Source and watch question</label><textarea id="source"></textarea><label for="reviewer">Reviewer, backup and destination</label><textarea id="reviewer"></textarea><label for="policy">Every-edit or IMPORTANT-only delivery</label><textarea id="policy"></textarea><label for="maintenance">Maintenance owner and source-check schedule</label><textarea id="maintenance"></textarea><label for="measure">Success measure and review date</label><textarea id="measure"></textarea><p class="small">Answers stay in this page while it is open. Copy or print them before closing. Nothing is sent or stored online.</p><button type="button" onclick="window.print()">Print your worksheet</button><p class="small">The M365 route remains a configuration recipe. A successful tenant run remains unverified. <a href="README.md">File index and limitations</a>.</p></main><script>document.getElementById('copy').addEventListener('click',async()=>{const text=document.getElementById('prompt').textContent;try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='Prompt copied.'}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('prompt'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copy-status').textContent='Prompt selected. Use your browser Copy command.'}});</script></body></html>
