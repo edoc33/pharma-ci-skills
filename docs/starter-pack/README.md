@@ -1,6 +1,8 @@
 # Pharma CI starter pack
 
-Build one source watch, one relevance rule and one review route. This pack matches the revised Pharma CI USA workshop for September 17, 2026, 11:15-11:45 EDT. Updated September 16.
+Choose one source watch, one relevance rule and one review route. This pack accompanies the Pharma CI USA workshop for September 17, 2026, 11:15-11:45 EDT. Updated September 17.
+
+The session uses saved alerts and guided discussion, with no live build. Use the [saved-alert walkthrough](workflow-walkthrough.md) during the discussion. The setup recipes and optional skills are for use after the session.
 
 Open [the offline handout](index.html), or read [the short PDF](pharma-ci-starter-guide.pdf). Download the [complete ZIP](https://github.com/edoc33/pharma-ci-skills/releases/latest/download/pharma-ci-starter-pack.zip). After download, the local material works offline; live source links need internet.
 
@@ -23,8 +25,8 @@ The directory contains **22 source entries across 23 URLs**. Novartis has two pa
 | [review-item-template.csv](review-item-template.csv) | Empty evidence, classification, ownership and maintenance fields |
 | [review-item-schema.json](review-item-schema.json) | Field dictionary; validate destination types before integration |
 | [m365-workflow.md](m365-workflow.md) | Shared mailbox to SharePoint review queue; Teams notification optional |
-| [demo-dry-run.md](demo-dry-run.md) | Eight-minute build, evidence mapping and truthful fallback |
-| [saved-event-manifest.json](saved-event-manifest.json) | Source evidence is bundled; workflow run and recording remain unverified |
+| [workflow-walkthrough.md](workflow-walkthrough.md) | Saved FDA alert, discussion questions, expected answers and evidence mapping |
+| [saved-event-manifest.json](saved-event-manifest.json) | Bundled source evidence and workflow execution status |
 | [fda-public-change-example.json](fda-public-change-example.json) | Optional historical July meeting-time exercise with illustrative routing |
 | [fictional-example.json](fictional-example.json) | Separate synthetic practice input |
 | [link-verification.md](link-verification.md) | Dated reachability checks and capture-preview limits |
