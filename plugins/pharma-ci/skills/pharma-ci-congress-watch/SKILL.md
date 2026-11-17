@@ -119,10 +119,8 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    The dry run prints one CREATE or SKIP line per row and a rough monthly check count for the
    intervals in the file; show it to the user, and say which season those intervals reflect. Only
    when the user types `confirm` do you re-run with `--confirm` appended. The helper builds the complete create payload documented in
-   `../../reference/visualping-api.md`, including each row's explicit delivery policy. Business-plan
-   users who prefer the web app can upload the two-column `congress-import.csv` through Bulk
-   Import and paste each rule by hand. Visualping also exposes an MCP server at
-   `https://visualping.io/mcp/sse` (tools `create_monitor`, `get_monitors`, `get_timeline`,
+   `../../reference/visualping-api.md`, including each row's explicit delivery policy. On any plan, users can paste the URL and Title columns from `congress-import.csv` into the desktop Bulk tab and paste each rule by hand. Visualping also exposes an Streamable HTTP MCP server at
+   `https://visualping.io/mcp` (tools `create_monitor`, `get_monitors`, `get_timeline`,
    `describe_user`); mention it as an alternative only if the user already has it connected.
 
 8. **Read alerts back and fill the queue.** Pull changes with
@@ -143,7 +141,7 @@ All files live under `./pharma-ci/` in the current workspace. Show absolute path
    triage criteria, a check-volume estimate per season, and named blind spots (embargoed content,
    portals behind registration, encore presentations at meetings not in scope).
 2. `./pharma-ci/congress-import.csv`: exactly two columns, `URL,Title`, one row per verified URL.
-   This is the web-app Bulk Import shape (Business plan). Omit rows without a URL and report the
+   This is the desktop Bulk tab format on every plan. Omit rows without a URL and report the
    omitted count.
 3. `./pharma-ci/congress-prompt-guide.csv`: columns
    `url,title,rule,interval,owner,backup,recheck_by,decision_served,delivery_policy,maintenance_owner,capture_scope`. `interval` holds the value

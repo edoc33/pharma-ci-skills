@@ -15,7 +15,7 @@ The directory contains **22 source entries across 23 URLs**. Novartis has two pa
 | File | Use |
 |---|---|
 | [source-directory.csv](source-directory.csv) | Sources, complete prompts, cadence examples, coverage limits and maintenance owner |
-| [import-tab.csv](import-tab.csv) | Two columns only: URL and Title; paste into the Business-plan Bulk Import workflow |
+| [import-tab.csv](import-tab.csv) | Two columns only: URL and Title; paste into the desktop Bulk tab on any plan |
 | [prompt-guide-tab.csv](prompt-guide-tab.csv) | Prompt and settings guidance for each row |
 | [api-watchlist.csv](api-watchlist.csv) | Optional API helper format; daily example cadence, unassigned owners and delivery choice left blank |
 | [core-rules.md](core-rules.md) | Six rule families and the choice between every-change and IMPORTANT-only delivery |
@@ -37,7 +37,7 @@ Add the URL individually, inspect the preview and select the content needed by t
 
 For small brand, HCP, image or wording edits, test a sensitive capture and every-edit delivery when required by the brief. Test a known relevant change, a small relevant edit and a routine edit before relying on filtering. Keep the saved comparison available to the reviewer.
 
-Bulk Import is a Business-plan feature. Paste the two columns from `import-tab.csv`, then configure selection, cadence, prompts and delivery. Other plans can add URLs individually. API keys are available on every plan. See [Visualping signup](https://visualping.io/sign-up) and the [optional skills repository](https://github.com/edoc33/pharma-ci-skills).
+On any plan, paste the URL and Title columns from `import-tab.csv` into the desktop Bulk tab. Choose shared settings before creation, then adjust individual monitors as needed. Your plan’s active-monitor limit applies. [Monitor creator instructions](https://help.visualping.io/en/articles/14280833). API keys are available on every plan. See [Visualping signup](https://visualping.io/sign-up) and the [optional skills repository](https://github.com/edoc33/pharma-ci-skills).
 
 The optional API helper uses `api-watchlist.csv`, whose lowercase fields differ from the two-column dashboard import. Replace bracketed scope, choose the rows, owners and cadence, then set each row's `delivery_policy` to `all` or `important` before a confirmed write. The helper can also accept an explicit common `--delivery` choice. Its dry run creates nothing. See the repository's API reference before using it.
 

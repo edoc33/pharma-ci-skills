@@ -69,7 +69,7 @@ considered executed until an authorized test succeeds and its result is recorded
 
    Use `changes --job <id> --since <date>` when a single monitor needs its full week, including
    the changes the rule did not flag. With no API access, paste the alert emails; each carries the
-   same fields. The Visualping MCP server at https://visualping.io/mcp/sse (`get_timeline`,
+   same fields. The Visualping Streamable HTTP MCP server at https://visualping.io/mcp (`get_timeline`,
    `get_monitors`) is an alternative route to the same data. Record how many changes were
    important and how many were regular; the regular count is a coverage fact, not a filing.
 
