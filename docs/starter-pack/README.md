@@ -37,7 +37,11 @@ Add the URL individually, inspect the preview and select the content needed by t
 
 For small brand, HCP, image or wording edits, test a sensitive capture and every-edit delivery when required by the brief. Test a known relevant change, a small relevant edit and a routine edit before relying on filtering. Keep the saved comparison available to the reviewer.
 
-On any plan, paste the URL and Title columns from `import-tab.csv` into the desktop Bulk tab. Choose shared settings before creation, then adjust individual monitors as needed. Your plan’s active-monitor limit applies. [Monitor creator instructions](https://help.visualping.io/en/articles/14280833). API keys are available on every plan. See [Visualping signup](https://visualping.io/sign-up) and the [optional skills repository](https://github.com/edoc33/pharma-ci-skills).
+On any plan, paste the URL and Title columns from `import-tab.csv` into the desktop Bulk tab. Choose
+shared settings before creation, then adjust individual monitors as needed. Your plan’s active-monitor
+limit applies. [Monitor creator instructions](https://help.visualping.io/en/articles/14280833). API keys
+are available on every plan. See [Visualping signup](https://visualping.io/sign-up) and the [optional
+skills repository](https://github.com/edoc33/pharma-ci-skills).
 
 The optional API helper uses `api-watchlist.csv`, whose lowercase fields differ from the two-column dashboard import. Replace bracketed scope, choose the rows, owners and cadence, then set each row's `delivery_policy` to `all` or `important` before a confirmed write. The helper can also accept an explicit common `--delivery` choice. Its dry run creates nothing. See the repository's API reference before using it.
 

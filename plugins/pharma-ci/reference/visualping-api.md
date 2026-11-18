@@ -117,10 +117,13 @@ creation only; its `--confirm` flag is required for writes.
 
 ## Bulk import in the web app
 
-On every plan, use the desktop monitor creator’s Bulk tab to paste URL and optional Title columns. Select the shared frequency and prompt before creating the monitors. Keep the prompt guide for pages that require individual settings. The number of monitors must fit the plan's allowance. [Visualping monitor creator](https://help.visualping.io/en/articles/14280833).
+On every plan, use the desktop monitor creator’s Bulk tab to paste URL and optional Title columns. Select
+the shared frequency and prompt before creating the monitors. Keep the prompt guide for pages that require
+individual settings. The number of monitors must fit the plan's allowance. [Visualping monitor
+creator](https://help.visualping.io/en/articles/14280833).
 
-For the API helper, use `scripts/vp_client.py bulk`, which creates them one by one from a CSV with `url,title,rule` and an
-optional `interval` and `delivery_policy` columns. A live bulk write requires a row policy or
+For the API helper, use `scripts/vp_client.py bulk`, which creates monitors one at a time from a CSV.
+The helper requires `url`, `title` and `rule`. Optional columns are `interval` and `delivery_policy`. A live bulk write requires a row policy or
 the common `--delivery` option.
 
 The helper validates every CSV row before creating anything and accepts UTF-8 files with or
@@ -137,6 +140,7 @@ and available plan. Verify any applicable deadline before using it to set the sc
 
 ## MCP alternative
 
-Visualping uses the [documented Streamable HTTP endpoint](https://help.visualping.io/en/articles/11982593) at `https://visualping.io/mcp` for Claude, ChatGPT and
+Visualping uses the [documented Streamable HTTP endpoint](https://help.visualping.io/en/articles/11982593)
+at `https://visualping.io/mcp` for Claude, ChatGPT and
 other agents, with tools such as `create_monitor`, `get_monitors`, `get_timeline` and
 `describe_user`. These skills use the REST API so they run anywhere Python does.

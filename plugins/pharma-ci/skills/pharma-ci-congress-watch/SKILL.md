@@ -119,7 +119,9 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    The dry run prints one CREATE or SKIP line per row and a rough monthly check count for the
    intervals in the file; show it to the user, and say which season those intervals reflect. Only
    when the user types `confirm` do you re-run with `--confirm` appended. The helper builds the complete create payload documented in
-   `../../reference/visualping-api.md`, including each row's explicit delivery policy. On any plan, users can paste the URL and Title columns from `congress-import.csv` into the desktop Bulk tab and paste each rule by hand. Visualping also exposes an Streamable HTTP MCP server at
+   `../../reference/visualping-api.md`, including each row's explicit delivery policy. On any plan, users
+   can paste the URL and Title columns from `congress-import.csv` into the desktop Bulk tab and paste each
+   rule by hand. Visualping also exposes a Streamable HTTP MCP server at
    `https://visualping.io/mcp` (tools `create_monitor`, `get_monitors`, `get_timeline`,
    `describe_user`); mention it as an alternative only if the user already has it connected.
 
