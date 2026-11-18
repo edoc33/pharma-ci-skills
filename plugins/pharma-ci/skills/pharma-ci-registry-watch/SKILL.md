@@ -104,10 +104,10 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    `python3 scripts/vp_client.py bulk --workspace <id> --csv ./pharma-ci/registry-prompt-guide.csv`.
    The dry run prints one CREATE or SKIP line per row and a rough monthly check count. Show it to
    the user. Only when the user types `confirm` do you re-run with `--confirm` appended. The helper builds the required payload described in `../../reference/visualping-api.md`,
-   including the selected delivery policy. Business-plan
-   users who prefer the web app can upload the two-column `registry-import.csv` through Bulk
-   Import and paste each rule by hand. Visualping also exposes an MCP server at
-   `https://visualping.io/mcp/sse` (tools `create_monitor`, `get_monitors`, `get_timeline`,
+   including the selected delivery policy. On any plan, users can paste the URL and Title columns from
+   `registry-import.csv` into the desktop Bulk tab and paste each rule by hand. Visualping also exposes a
+   Streamable HTTP MCP server at
+   `https://visualping.io/mcp` (tools `create_monitor`, `get_monitors`, `get_timeline`,
    `describe_user`); mention it as an alternative only if the user already has it connected.
 
 8. **Read the first amendment against the evidence.** Pull the saved change and identify the
@@ -126,7 +126,7 @@ All files live under `./pharma-ci/` in the current workspace. Show absolute path
    decision, assumptions, a check-volume estimate (rows times checks per month, with the time
    window stated) against the owner's review capacity, and named blind spots.
 2. `./pharma-ci/registry-import.csv`: exactly two columns, `URL,Title`, one row per verified URL.
-   This is the web-app Bulk Import shape (Business plan). Omit rows without a URL and report the
+   This is the desktop Bulk tab format on every plan. Omit rows without a URL and report the
    omitted count.
 3. `./pharma-ci/registry-prompt-guide.csv`: columns
    `url,title,rule,interval,owner,backup,recheck_by,decision_served,delivery_policy,maintenance_owner,capture_scope`. This is the file

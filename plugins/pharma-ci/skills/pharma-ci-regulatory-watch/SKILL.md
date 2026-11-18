@@ -121,9 +121,9 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    The dry run prints one CREATE or SKIP line per row and a rough monthly check count; the hourly
    rows will dominate that count, so show it to the user. Only when the user types `confirm` do
    you re-run with `--confirm` appended. The helper builds the required payload described in `../../reference/visualping-api.md`,
-   including the selected delivery policy. Business-plan users who prefer the web
-   app can upload the two-column `regulatory-import.csv` through Bulk Import and paste each rule
-   by hand. Visualping also exposes an MCP server at `https://visualping.io/mcp/sse` (tools
+   including the selected delivery policy. On any plan, users can paste the URL and Title columns from
+   `regulatory-import.csv` into the desktop Bulk tab and paste each rule
+   by hand. Visualping also exposes a Streamable HTTP MCP server at `https://visualping.io/mcp` (tools
    `create_monitor`, `get_monitors`, `get_timeline`, `describe_user`); mention it as an
    alternative only if the user already has it connected.
 
@@ -146,7 +146,7 @@ All files live under `./pharma-ci/` in the current workspace. Show absolute path
    blind spots (unpublished agency correspondence, pages behind login, national registers not in
    scope).
 2. `./pharma-ci/regulatory-import.csv`: exactly two columns, `URL,Title`, one row per verified
-   URL. This is the web-app Bulk Import shape (Business plan). Omit rows without a URL and report
+   URL. This is the desktop Bulk tab format on every plan. Omit rows without a URL and report
    the omitted count.
 3. `./pharma-ci/regulatory-prompt-guide.csv`: columns
    `url,title,rule,interval,owner,backup,recheck_by,decision_served,delivery_policy,maintenance_owner,capture_scope`. This is the file

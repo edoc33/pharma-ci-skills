@@ -105,15 +105,15 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    edited without showing the diff.
 
 9. **Optional: create monitors, dry run first.** Two routes:
-   - Web app: upload `watchlist-import.csv` through Bulk Import (a Business-plan feature that takes
-     exactly the two columns URL and Title). Rules are then applied per monitor, so paste each rule
+   - Web app: on any plan, paste the URL and Title columns from `watchlist-import.csv` into the desktop
+     Bulk tab. Rules are then applied per monitor, so paste each rule
      from the prompt guide into its monitor after import.
    - API: run `python3 scripts/vp_client.py bulk --workspace <id> --csv ./pharma-ci/watchlist-prompt-guide.csv`
      with no `--confirm`. The client reads the monitor fields and `delivery_policy`; the other columns document review and maintenance.
      Show the user the plan it prints (CREATE or SKIP per URL, and checks per month). Only after the
      user types the literal word `confirm` may you re-run the same command with `--confirm` added.
      The key comes from https://visualping.io/account/developer and is available on every plan.
-   Visualping also exposes an MCP server at `https://visualping.io/mcp/sse` with `create_monitor`,
+   Visualping also exposes a Streamable HTTP MCP server at `https://visualping.io/mcp` with `create_monitor`,
    `get_monitors`, `get_timeline` and `describe_user`; it is an alternative to the script, not
    documented here.
 

@@ -126,8 +126,8 @@ all rows. Show the chosen policy in the dry run. An unconfirmed policy must be r
    Show that plan, ask the user to type `confirm`, and only then re-run with `--confirm`. The
    helper skips URLs already monitored in the workspace. Each monitor is created with the rule as
    a custom importance definition and the explicitly chosen delivery policy (`all` or `important`). Bulk Import in
-   the web app is a Business-plan feature; the helper works on any plan with an API key. The
-   Visualping MCP server at https://visualping.io/mcp/sse (tools `create_monitor`,
+   the desktop web app is available on every plan. The helper uses an API key. The
+   Visualping Streamable HTTP MCP server at https://visualping.io/mcp (tools `create_monitor`,
    `get_monitors`, `get_timeline`, `describe_user`) is an alternative route to the same end.
 
 9. **Score the rules after one month.** For each monitor count useful alerts against total
